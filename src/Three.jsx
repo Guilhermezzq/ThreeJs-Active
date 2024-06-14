@@ -21,8 +21,6 @@ const Three = () => {
 
 
 
-
-
   return (
     <>
       {/* <OrbitControls /> */}
@@ -33,13 +31,10 @@ const Three = () => {
       <primitive 
       object={three.scene}
       ref={threeRef}
-      scale={0.01}
-      position={[0, 3, 0]}
+      scale={0.05}
+      position={[0, -0.5, 0]}
       rotation={[0, 0, 0]}
       />
-
-
-
       
     </>
   );

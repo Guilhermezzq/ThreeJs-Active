@@ -1,7 +1,7 @@
 
 import { Canvas } from '@react-three/fiber';
 import React, { Suspense, useEffect, useState } from 'react';
-import Three from '../../Three';
+import Three from '../Three';
 import './Header.css';
 
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];

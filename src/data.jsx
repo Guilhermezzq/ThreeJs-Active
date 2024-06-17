@@ -1,7 +1,11 @@
+import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
+import Three from '../Three';
+
 
 export const CORE_CONCEPTS = [
     {
-    // image: ,
+    
       title: 'Animation',
       description:
         'Animation is an essential technique for creating movement and interactivity in your 3D scenes. ',

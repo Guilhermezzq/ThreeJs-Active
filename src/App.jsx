@@ -1,18 +1,27 @@
 
-import React from 'react'
-import Header from './Header/Header'
+import Header from "./Header/Header";
+import CoreConcepts from "./components/CoreConcepts";
+import CorePrinciple from "./components/CorePrincipal";
+import Examples from "./components/Examples";
 
 
-const App = () => {
 
 
 
+
+
+
+function App() {
   return (
-    <>
-    <Header />
-    
+    <> 
+      <Header />
+      <CorePrinciple />
+      <main>
+        <CoreConcepts />
+        <Examples />
+      </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

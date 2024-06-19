@@ -9,12 +9,12 @@ import { useRef } from "react";
 
 const Object3D = () => {
 
-    const object3d = useGLTF("./model/m4_sopmod.glb");
+    const object3d = useGLTF("./model/salty.glb");
 
-    const objectRef = useRef();
+  const objectRef = useRef();
 
   const animate = () => {
-    objectRef.current.rotation.y += 0.03;
+    objectRef.current.rotation.y += 0.02;
     
     requestAnimationFrame(animate);
   }
@@ -34,7 +34,8 @@ const Object3D = () => {
    <primitive
    ref={objectRef}
    object={object3d.scene}
-   scale={2}
+   scale={1}
+   position={[0, 0, 0]}
    
 
    />
@@ -43,6 +44,6 @@ const Object3D = () => {
 }
 
  
-useGLTF.preload("./model/m4_sopmod.glb");
+useGLTF.preload("./model/salty.glb");
 
 export default Object3D;

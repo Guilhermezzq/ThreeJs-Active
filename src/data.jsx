@@ -1,8 +1,19 @@
+import { Canvas } from "@react-three/fiber";
+import Mario from "./Mario";
+import { Suspense } from "react";
+
+
 
 
 export const CORE_CONCEPTS = [
     {
-    
+  
+      model: 
+      <Canvas>
+        <Suspense>
+          <Mario /> 
+        </Suspense>
+      </Canvas> ,
       title: 'Animation',
       description:
         'Animation is an essential technique for creating movement and interactivity in your 3D scenes. ',
@@ -26,6 +37,8 @@ export const CORE_CONCEPTS = [
         'This is the base class for most objects in three.js and provides a set of properties and methods for manipulating objects in 3D space.',
     },
   ];
+
+
   
   export const EXAMPLES = {
     animation: {

@@ -7,7 +7,7 @@ export default function CoreConcepts() {
 
     return (
         <> 
-        <h2> Core Principle</h2>
+        <h2>Three Js - React Three Fiber</h2>
         <section id="core-concepts">
           <ul>
 

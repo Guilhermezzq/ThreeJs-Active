@@ -63,7 +63,8 @@ export const EXAMPLES = {
     description:
       "Animation in Three.js involves changing the properties of objects over time to create the illusion of motion. This can include transformations such as rotation, translation (movement), scaling, and changing material properties. Three.js provides a built-in animation system that allows developers to easily create and control animations.",
     code: ` 
-import { OrbitControls, useAnimations, useGLTF } from "@react-three/drei"
+import { OrbitControls, useAnimations,
+useGLTF } from "@react-three/drei"
 import { useEffect, useState } from "react";
 
 
@@ -72,7 +73,8 @@ const Mario = () => {
 
 const Mario = useGLTF("./model/model.gltf")
 
-    const animations = useAnimations(Mario.animations, Mario.scene);
+    const animations = 
+    useAnimations(Mario.animations, Mario.scene);
 
     console.log(Mario);
     console.log(animations);
@@ -127,7 +129,7 @@ import { useGLTF } from "@react-three/drei"
 
 const Camera = () => {
 
-    const Mario = useGLTF("./model/camera.glb")
+const Mario = useGLTF("./model/camera.glb")
 
 
   return (
@@ -161,7 +163,8 @@ export default Camera;
     code: 
     `
     
-import { PresentationControls } from '@react-three/drei'
+import { PresentationControls 
+} from '@react-three/drei'
 import React from 'react'
 
 const Materials = () => {
@@ -189,7 +192,7 @@ const Materials = () => {
         
         
         />
-        <meshBasicMaterial color="#F5F5F5" />
+    <meshBasicMaterial color="#F5F5F5" />
     </mesh>
     </PresentationControls>
     </>
@@ -212,7 +215,7 @@ import { useRef } from "react";
 
 const Object3D = () => {
 
-    const object3d = useGLTF("./model/m4_sopmod.glb");
+const object3d = useGLTF("./model/m4_sopmod.glb");
 
     const objectRef = useRef();
 
